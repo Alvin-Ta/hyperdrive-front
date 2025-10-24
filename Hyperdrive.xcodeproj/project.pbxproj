@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C7F9462C2E30A36F006EBB0B /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = C7F9462B2E30A36F006EBB0B /* SDWebImage */; };
+		C7F9462E2E30A375006EBB0B /* SDWebImageSVGCoder in Frameworks */ = {isa = PBXBuildFile; productRef = C7F9462D2E30A375006EBB0B /* SDWebImageSVGCoder */; };
+		C7F946312E30A426006EBB0B /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = C7F946302E30A426006EBB0B /* SDWebImageSwiftUI */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		C7D801012E1E0F4200909B29 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +58,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7F946312E30A426006EBB0B /* SDWebImageSwiftUI in Frameworks */,
+				C7F9462C2E30A36F006EBB0B /* SDWebImage in Frameworks */,
+				C7F9462E2E30A375006EBB0B /* SDWebImageSVGCoder in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +87,7 @@
 				C7D800F22E1E0F4000909B29 /* Hyperdrive */,
 				C7D801032E1E0F4200909B29 /* HyperdriveTests */,
 				C7D8010D2E1E0F4200909B29 /* HyperdriveUITests */,
+				C7F946262E30A040006EBB0B /* Frameworks */,
 				C7D800F12E1E0F4000909B29 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +100,13 @@
 				C7D8010A2E1E0F4200909B29 /* HyperdriveUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		C7F946262E30A040006EBB0B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +129,9 @@
 			);
 			name = Hyperdrive;
 			packageProductDependencies = (
+				C7F9462B2E30A36F006EBB0B /* SDWebImage */,
+				C7F9462D2E30A375006EBB0B /* SDWebImageSVGCoder */,
+				C7F946302E30A426006EBB0B /* SDWebImageSwiftUI */,
 			);
 			productName = Hyperdrive;
 			productReference = C7D800F02E1E0F4000909B29 /* Hyperdrive.app */;
@@ -195,6 +215,11 @@
 			);
 			mainGroup = C7D800E72E1E0F3F00909B29;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				C7F946292E30A2D5006EBB0B /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				C7F9462A2E30A2F1006EBB0B /* XCRemoteSwiftPackageReference "SDWebImageSVGCoder" */,
+				C7F9462F2E30A40E006EBB0B /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C7D800F12E1E0F4000909B29 /* Products */;
 			projectDirPath = "";
@@ -396,6 +421,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Hyperdrive/Preview Content\"";
+				DEVELOPMENT_TEAM = B6239568R3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -403,6 +429,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -424,6 +451,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Hyperdrive/Preview Content\"";
+				DEVELOPMENT_TEAM = B6239568R3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -431,6 +459,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -552,6 +581,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C7F946292E30A2D5006EBB0B /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.21.1;
+			};
+		};
+		C7F9462A2E30A2F1006EBB0B /* XCRemoteSwiftPackageReference "SDWebImageSVGCoder" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSVGCoder.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.8.0;
+			};
+		};
+		C7F9462F2E30A40E006EBB0B /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C7F9462B2E30A36F006EBB0B /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C7F946292E30A2D5006EBB0B /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		C7F9462D2E30A375006EBB0B /* SDWebImageSVGCoder */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C7F9462A2E30A2F1006EBB0B /* XCRemoteSwiftPackageReference "SDWebImageSVGCoder" */;
+			productName = SDWebImageSVGCoder;
+		};
+		C7F946302E30A426006EBB0B /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C7F9462F2E30A40E006EBB0B /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C7D800E82E1E0F3F00909B29 /* Project object */;
 }
