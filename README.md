@@ -72,6 +72,6 @@ Hyperdrive is built with a clean client/server separation:
 
 <div align="center">
 
-Built by [Alvin Ta](https://github.com/Alvin-Ta) • Open to feedback and contributions
+Built by [Alvin Ta](https://github.com/Alvin-Ta) • Please feel free to provide feedback!
 
 </div>
