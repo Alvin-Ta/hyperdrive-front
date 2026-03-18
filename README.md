@@ -43,7 +43,7 @@ Hyperdrive is an iOS app that pulls real-time NHL data to give fans a deeper vie
 Hyperdrive is built with a clean client/server separation:
 
 - **iOS Client (Swift/SwiftUI)** — Built using the MVVM architecture pattern to keep views lightweight and business logic testable. Polling is used to continuously refresh live game data without requiring a persistent connection.
-- **Node.js Backend — A dedicated server processes the unofficial NHL RESTful API and exposes clean, structured endpoints for the client to consume. This layer handles data transformation, filtering, and response shaping so the client stays lean. See [**hyperdrive-server**](https://github.com/Alvin-Ta/hyperdrive-backend) for the backend repo.
+- **Node.js Backend — A dedicated server processes the unofficial NHL RESTful API and exposes clean, structured endpoints for the client to consume. This layer handles data transformation, filtering, and response shaping so the client stays lean. See [**hyperdrive-backend**](https://github.com/Alvin-Ta/hyperdrive-backend) for the backend repo.
 - **Deployed on Render** — The backend is hosted on Render for reliable uptime during live game windows.
 
 ---
